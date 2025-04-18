@@ -23,7 +23,7 @@ depends_on: Union[str, Sequence[str], None] = None
 def upgrade() -> None:
     """Upgrade schema."""
     connection = op.get_bind()
-    parse_to_db(settings.POSTGRES_URL.replace('asyncpg', 'psycopg'))
+    parse_to_db(connection.engine.url)
 
 
 def downgrade() -> None:
