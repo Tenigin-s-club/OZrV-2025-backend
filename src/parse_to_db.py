@@ -31,7 +31,7 @@ def parse_to_db(uri: str):
         data = json.load(f)
         with session_factory() as session:
             for row in data:
-                emb = model_facade.generate_embeddings([row['question']])
+                emb = model_facade.generate_embeddings(row['question'])
                 session.execute(
                     statement=text(
                         'INSERT INTO question_answers (question, answer, embedding, url) VALUES (:question, :answer, :embedding, :url)'),

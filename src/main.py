@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -5,6 +6,16 @@ from src.bert import BertModel
 from src.config import settings
 from src.routers import routers_list
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    global bert_model
+    bert_model = BertModel(settings.POSTGRES_URL, "")
+    yield
+    del bert_model
+
+
+bert_model = None
 app = FastAPI(
     root_path="/api"
 )
@@ -26,10 +37,10 @@ app.add_middleware(
     allow_headers=['*'],
 )
 
+
 @app.post('/question')
-def ask_question(question: str = Body(embed=True)):
-    model_facade = BertModel(settings.POSTGRES_URL, "")
-    return model_facade.find_best(question)
+def ask_question(question: str = Body(embed=True)) -> str:
+    return ''.join(bert_model.find_best(question))
 
 for router in routers_list:
     app.include_router(router)
