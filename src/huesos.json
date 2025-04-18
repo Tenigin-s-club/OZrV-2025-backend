@@ -1,6 +1,31 @@
 [
   {
-    "question": "Привет, я хочу написать обращение",
+    "question": "Отключили электричество на улице Ленина",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "Пропала горячая вода",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "Нужно сообщить о проблема",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "Проблема",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "У меня проблема",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "Я хочу написать обращение",
     "answer": "Сообщить о проблеме Вы можете здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
   },
@@ -15,12 +40,62 @@
     "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
   },
   {
+    "question": "Сколько домов на улице Головина?",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+  {
+    "question": "Как распределена земля в Сириусе",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+  {
+    "question": "Какие объекты есть на Олимпийском проспекте?",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+  {
     "question": "Хочу ознакомиться со всеми домами на ФТ",
     "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
   },
   {
+    "question": "Что за дом?",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+    {
+    "question": "Дома",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+  {
     "question": "Как посмотреть все транспортные маршруты?",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "Когда приходит электричка?",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "Где находится вокзал \"Олимпийская деревня\"?",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "На каких остановках останавливается автобус?",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "Какой маршрут у маршрутки 1?",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "Сколько осталось до электрички?",
     "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
     "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
   },
@@ -35,7 +110,42 @@
     "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
   },
   {
+    "question": "Как поступить в университет?",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Куда можно поступить после 11 класса?",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
     "question": "Посоветуй школу для моего ребёнка",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Сколько учиться в президентском лицее?",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Где получить образование?",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Со скольки лет принмают в детский сад",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Сколько учеников в лицее",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Какие естьнаправления в университете",
     "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
     "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
   },
@@ -50,7 +160,57 @@
     "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
   },
   {
+    "question": "где потренироваться?",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "поиграть в баскетбол",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Есть в Сириусе волейбольные площадки?",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Сколько спортивных площадок в Сириусе?",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Можно ли поиграть в падлбол",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Занятия волейболом",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Есть теннисные корты?",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Спортивные объекты",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Где поиграть на ФТ?",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
     "question": "Красивые места на территории ФТ",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "Где погулять в Сириусе",
     "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
   },
@@ -60,12 +220,117 @@
     "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
   },
   {
+    "question": "Где отдохнуть?",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "Есть октрытая набережная?",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "Что за музыкальный сад?",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "где есть красивый фонтан",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "правда что есть поющий фонтан",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "что за площадь в йентре сириуса",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "как называется площадь с поющим фонтаном?",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
     "question": "Последние новости Федеральной территории",
     "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/news"
   },
   {
+    "question": "Культура на федеральной территории",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
     "question": "Что нового происходит в Сириусе?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что говорит общество?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Люди Сириуса",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Новости ФТ",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Новости образования",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Наука",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "ЖКХ",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что происходит?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Последние события",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что за конкурс?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что за происшествие, о котором все говорят?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что расскажешь?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что интересного?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Хочу быть в курсе всех событий",
     "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/news"
   },
@@ -80,12 +345,87 @@
     "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
   },
   {
+    "question": "МФЦ на территории Сириуса",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Сириус 24",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "парки.ФТ",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Мне нужен центр предоставления услуг",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Что за многофункциональный центр?",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Водоканал в Сириусе",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Кто всеми управляет?",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "цифра.ФТ",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Мне нужна ресурсная организация",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
     "question": "Последние оповещения",
     "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
   },
   {
+    "question": "Правда, что надвигается шторм?",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Будут ли погодные ухудшения?",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
     "question": "Что за ограничения движения?",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Есть ли какие-то оповещения?",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Есть что-то срочное?",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Пройти опрос",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Будет ли проверка?",
     "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
   },
@@ -100,7 +440,47 @@
     "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
   },
   {
+    "question": "Когда починят дорогу на улице Ленина?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Будет ли ремонт дорог?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Где сейчас проводится ремонт?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Текущие работы",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Будет ли благоустройство парка Героев?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "что с дорогами?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Где не проехать?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
     "question": "Итоги работы на федеральной территории?",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "Какие изменения на ФТ",
     "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/"
   },
@@ -108,5 +488,30 @@
     "question": "Итоги преображения ФТ",
     "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
     "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "Модернизация федеральной территории",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "было/стало",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "Стало ли лучше?",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "Что поменялось в Сириусе?",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "Егор сосал?",
+    "answer": "Сосал",
+    "url": ""
   }
 ]
