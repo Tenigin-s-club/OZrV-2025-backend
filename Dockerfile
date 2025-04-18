@@ -10,4 +10,6 @@ RUN poetry install --no-root
 
 COPY . .
 
-CMD alembic upgrade head && uvicorn src.main:app --host "0.0.0.0" --port 8080 --reload
+RUN chmod a+x ./build/*.sh
+
+CMD [ "sh", "./build/app_entrypoint.sh" ]
