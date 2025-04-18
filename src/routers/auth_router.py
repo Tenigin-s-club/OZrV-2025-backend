@@ -105,8 +105,3 @@ async def refresh(request: Request, response: Response) -> None:
 async def logout(response: Response) -> None:
     response.delete_cookie(settings.auth.cookie_access)
     response.delete_cookie(settings.auth.cookie_refresh)
-
-
-@router.delete('/delete_user/{id}', status_code=status.HTTP_204_NO_CONTENT)
-async def delete_user(id: UUID) -> None:
-    await AuthRepository.delete(id)
