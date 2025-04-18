@@ -22,9 +22,10 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Upgrade schema."""
+    connection = op.get_bind()
     parse_to_db(settings.POSTGRES_URL.replace('asyncpg', 'psycopg'))
 
 
 def downgrade() -> None:
     """Downgrade schema."""
-    op.execute('TRUNCATE question_answer CASCADE;')
+    op.execute('TRUNCATE question_answers CASCADE;')

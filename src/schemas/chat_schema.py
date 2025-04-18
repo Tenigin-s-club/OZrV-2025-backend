@@ -8,5 +8,5 @@ class ChatS(BaseModel):
     id: UUID
     content: str
     human_is: bool
-    created_at: datetime.datetime
+    created_at: datetime
 
