@@ -4,10 +4,10 @@ import datetime
 from sqlalchemy import text, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column
 
-from src.database.database import DeclarativeBase
+from src.database.database import Base
 
 
-class Message(DeclarativeBase):
+class Message(Base):
     __tablename__ = "message"
 
     id: Mapped[uuid.UUID] = mapped_column(primary_key=True, server_default=text('uuid_generate_v4()'))
