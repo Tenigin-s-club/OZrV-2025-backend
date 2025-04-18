@@ -14,3 +14,4 @@ class Message(Base):
     is_human: Mapped[bool]
     content: Mapped[str]
     created_at: Mapped[datetime.datetime] = mapped_column(server_default=text("TIMEZONE('utc', now())"))
+    chat_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("chat.id"))

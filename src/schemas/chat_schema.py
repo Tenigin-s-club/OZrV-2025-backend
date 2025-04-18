@@ -6,7 +6,6 @@ from pydantic import BaseModel
 
 class ChatS(BaseModel):
     id: UUID
-    content: str
-    human_is: bool
+    name: str
     created_at: datetime
 

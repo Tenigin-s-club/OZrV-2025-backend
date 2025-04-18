@@ -1,3 +1,4 @@
+from uuid import UUID
 
 from fastapi import APIRouter, Request
 
@@ -18,8 +19,8 @@ async def get_chat(request: Request):
     chats = await ChatRepository.fide_chats_by_user_id(user_id)
     return [ChatS(**chat) for chat in chats]
 
-@router.get("/id")
-async def get_messages(request: Request):
+@router.get("/chat_id")
+async def get_messages(request: Request, chat_id: UUID):
     user_id = await get_user_id(request)
-    messages = await MessageRepository.fide_message_by_chat_id(user_id)
+    messages = await MessageRepository.fide_message_by_chat_id(chat_id, user_id)
     return [MessageS(**message) for message in messages]
