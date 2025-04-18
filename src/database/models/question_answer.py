@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Mapped, mapped_column
 
-from src.database import Base
+from src.database.database import Base
 
 
 class QuestionAnswer(Base):
