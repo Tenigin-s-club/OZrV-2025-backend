@@ -1,7 +1,3 @@
-import asyncio
-from logging import getLogger
-
-import aiohttp
 from numpy import array, float32
 from scipy.spatial import distance
 from sentence_transformers import SentenceTransformer
@@ -10,8 +6,6 @@ from sqlalchemy.engine import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from logging import getLogger
-
-LLM_API_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
 
 
 class BertModel:
@@ -26,64 +20,8 @@ class BertModel:
         embs = self.model.encode(sentences)[0]
         return embs.tolist()
 
-    async def get_answer(self, question: str) -> tuple[str, list[str]]:
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Api-Key {self._llm_api_key}"
-        }
-
-        loop = asyncio.get_event_loop()
-        best_answers, links = await loop.run_in_executor(None, self.find_best, question)
-
-        text = f"Найди информацию в инструкциях, которая может быть ответом к этому вопросу: {question}?"
-
-        prompt = {
-            "modelUri": "gpt://b1g72uajlds114mlufqi/yandexgpt-lite",
-            "completionOptions": {
-                "stream": False,
-                "temperature": 0.6,
-                "maxTokens": "2000"
-            },
-            "messages": [
-                {
-                    "role": "system",
-                    "text": """Ты умный помощник, тебя зовут "Русская красавица", ты должен отвечать на вопросы только по инструкциям.
-Если в инструкции нет информации ничего не пиши.
-Не давай лишней информации, не относящейся к вопросу.
-НЕ пиши ничего, кроме ответа на поставленный вопрос.
-НЕ давай НИКАКИХ комментариев к инструкциям."""
-                },
-                *[
-                    {
-                        "role": "user",
-                        "text": "Это инструкция для ответов:\n" + info
-                    }
-                    for info in best_answers
-                ],
-                {
-                    "role": "user",
-                    "text": text
-                },
-            ]
-        }
-
-        async with aiohttp.ClientSession() as session:
-            try:
-                response = await session.post(LLM_API_URL, headers=headers, json=prompt, timeout=8)
-            except asyncio.TimeoutError as e:
-                print('An error occured:', e)
-                return best_answers[0], links
-            result = await response.json()
-        try:
-            answer = result["result"]["alternatives"][0]["message"]["text"]
-        except Exception as e:
-            print(answer, e)
-            answer = best_answers[0]
-        return answer, links
-
-
     def find_best(self, sentence: str) -> tuple[str, list[str]]:
-        emb = self.model.encode([sentence])[0].tolist()
+        emb = self.generate_embeddings([sentence])
 
         with self.session_factory() as session:
             rows = session.execute(text(
@@ -93,8 +31,9 @@ class BertModel:
         distances = {}
         for i, item in enumerate(rows):
             question, answer, embedding, url = item
-            getLogger("fastapi").error(f'{emb}\n{embedding}\n{len(emb)}\n{len(embedding)}')
-            dist = distance.cosine(emb, array([float(elem) for elem in '{1.1,2.1,3.2}'[1:-1].split(',')], dtype=float32))
+            embedding = array([float(elem) for elem in embedding[1:-1].split(',')], dtype=float32)
+            getLogger().error(f'{emb}\n{embedding}\n{len(emb)}\n{len(embedding)}')
+            dist = distance.cosine(emb, embedding)
             distances[(question, i)] = (dist, answer, url)
 
         dists = sorted(list(distances.items()), key=lambda a: a[1][0])[:10]
