@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Привет, я хочу написать обращение",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "Хочу сообщить о проблеме",
+    "answer": "Сообщить о проблеме Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/requests/create"
+  },
+  {
+    "question": "Посмотреть реестр домов",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+  {
+    "question": "Хочу ознакомиться со всеми домами на ФТ",
+    "answer": "Подробую информацию о всех домах и объектах федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/housing"
+  },
+  {
+    "question": "Как посмотреть все транспортные маршруты?",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "Куда ходит автобус №560",
+    "answer": "Расположение остановок и расписание общественного транспорта Вы можете найти здесь:  ",
+    "url": "https://yandex.ru/maps/218709/sirius/category/public_transport_stop/223677355200/?l=masstransit&ll=39.963052%2C43.408328&sctx=ZAAAAAgBEAAaKAoSCUmGHFvP%2BkNAEUFHq1rSs0VAEhIJuB6F61G4rj8RuB6F61G4rj8iBgABAgMEBSgKOABA7oAHSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHDFvW%2BwgGVAdq%2FpM3BA%2F748tqaApGzmKmnBbqmypOAAs6sm%2B6hBtnS6cbYA83py5WmBbSJoabEA4GPj%2BWCAqjUhNq9BqCD35D%2FAtLd4faRA76r3NjRA%2FfP1rGXBrrlx%2F3YBcLvwsvfBcjEoarHBo3qnKOiBr%2F%2Fk8HNBbyF9L26BZSz%2BKaAAumXnN6LAung8czhAe7Ln%2BPcBpbUoIc%2FggIaY2F0ZWdvcnlfaWQ6KDIyMzY3NzM1NTIwMCmKAgwyMjM2NzczNTUyMDCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.963052%2C43.408328&sspn=0.090294%2C0.038922&z=14"
+  },
+  {
+    "question": "Какие образовательные учреждения есть на территории Сириуса?",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Посоветуй школу для моего ребёнка",
+    "answer": "Информацию об образовательных учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "http://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obrazovatelnye-obekty/obrazovatelnye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Где можно заняться спортом?",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Хочу поиграть в футбол",
+    "answer": "Заняться спортом и поиграть в спортивные игры Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/sportivnye-obekty/map"
+  },
+  {
+    "question": "Красивые места на территории ФТ",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "Какие парки есть в Сириусе?",
+    "answer": "Прогуляться по красивым местам федеральной территории \"Сириус\" Вы можете здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/obshchestvennye-prostranstva/map"
+  },
+  {
+    "question": "Последние новости Федеральной территории",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Что нового происходит в Сириусе?",
+    "answer": "Последние новости о событиях, происходящих в федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/news"
+  },
+  {
+    "question": "Расскажи мне про администрацию ФТ",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Кто занимается охраной порядка на фт?",
+    "answer": "Информацию об учреждениях федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/spravochnik/dt/vedomstvennye-uchrejdeniya?page=1"
+  },
+  {
+    "question": "Последние оповещения",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Что за ограничения движения?",
+    "answer": "Актуальные оповещения Вы всегда можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/administration"
+  },
+  {
+    "question": "Где будут проходить ремонтные работы?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Какие плановые работы намечены на ближайшее время?",
+    "answer": "Информацию о проводимых работах на федеральной территории \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/incident"
+  },
+  {
+    "question": "Итоги работы на федеральной территории?",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  },
+  {
+    "question": "Итоги преображения ФТ",
+    "answer": "Как преобразовалась федеральная территория \"Сириус\" Вы можете найти здесь: ",
+    "url": "https://xn--h1aablkofdr.xn--p1ai/"
+  }
+]

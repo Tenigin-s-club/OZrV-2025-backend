@@ -1,0 +1,28 @@
+services:
+  api:
+    build: .
+    env_file: .env
+    ports:
+      - "8080:8080"
+    stop_signal: SIGINT
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+
+  postgres:
+    image: 'postgres:16.2'
+    env_file: .env
+    ports:
+      - "54320:5432"
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "${POSTGRES_USER}", "-d", "${POSTGRES_DB}" ]
+      interval: 1s
+      timeout: 1s
+      retries: 60
+    volumes:
+      - postgres-storage:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres-storage:

@@ -1,0 +1,11 @@
+aiohttp==3.11.16
+alembic==1.15.2
+asyncpg==0.30.0
+fastapi==0.115.12
+hf_xet==1.0.3
+greenlet==3.2.0
+psycopg==3.2.6
+pydantic_settings==2.9.0
+sentence-transformers==4.1.0
+SQLAlchemy==2.0.40
+uvicorn==0.34.1
