@@ -27,6 +27,7 @@ origins = [
     'https://tunom.ru',
     'http://tunom.ru'
     'https://localhost:3000',
+    'http://localhost:5173'
 ]
 
 app.add_middleware(
