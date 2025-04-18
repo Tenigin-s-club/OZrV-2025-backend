@@ -1,8 +1,11 @@
 import datetime
+import uuid
 
 import jwt
+from starlette import status
 
 from src.config import settings
+from fastapi import Request, HTTPException
 
 
 async def encode(
@@ -33,3 +36,13 @@ async def decode(
 ):      
     return jwt.decode(token, key, algorithm)
 
+async def get_user_id(request: Request) -> uuid.UUID:
+    refresh_token = request.cookies.get(settings.auth.cookie_refresh)
+    try:
+        pyload = await decode(refresh_token.encode())
+    except Exception:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, 'token timeout')
+
+    sub = pyload['sub']
+
+    return uuid.UUID(sub)
