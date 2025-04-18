@@ -3,7 +3,7 @@ services:
     build: .
     env_file: .env
     ports:
-      - "8080:8080"
+      - "8080:8000"
     stop_signal: SIGINT
     depends_on:
       postgres:
