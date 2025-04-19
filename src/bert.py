@@ -22,7 +22,6 @@ class BertModel:
         return self.model.encode(sentence).tolist()
 
     def find_best(self, sentence: str) -> tuple[str, str]:
-        start_time = datetime.now()
         request_embs = self.generate_embeddings(sentence)
 
         with self.session_factory() as session:
@@ -41,6 +40,6 @@ class BertModel:
         closest_one_distance = best_distances[0]
         getLogger().error(f'{best_distances=}')
 
-        if closest_one_distance[1][0] > 0.3:
-            return 'Не получилось найти ответ, попробуйте перефразировать запрос, пожалуйста', ''
+        if closest_one_distance[1][0] > 0.15:
+            return 'Не получилось найти ответ, попробуйте перефразировать запрос или написать его целиком в одно предложение, пожалуйста', ''
         return closest_one_distance[1][1], closest_one_distance[1][2]

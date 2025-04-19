@@ -10,7 +10,7 @@ from src.schemas.chat_schema import SChat
 class ChatRepository:
 
     @staticmethod
-    async def fide_chats_by_user_id(id: UUID) -> [dict]:
+    async def find_chats_by_user_id(id: UUID) -> list[dict]:
         async with async_session_maker() as session:
             query = select(Chat.id, Chat.name, Chat.created_at).where(Chat.user_id == id)
             data = await session.execute(query)

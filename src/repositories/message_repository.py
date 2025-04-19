@@ -9,7 +9,7 @@ from src.database.models import Message, Chat
 class MessageRepository:
 
     @staticmethod
-    async def fide_message_by_chat_id(chat_id: UUID, user_id) -> list[dict]:
+    async def find_message_by_chat_id(chat_id: UUID, user_id) -> list[dict]:
         async with async_session_maker() as session:
             query = (select(
                 Message.id,
