@@ -42,8 +42,5 @@ class BertModel:
         getLogger().error(f'{best_distances=}')
 
         if closest_one_distance[1][0] > 0.3:
-            getLogger().error(f'Время работы: {datetime.now() - start_time}')
             return 'Не получилось найти ответ, попробуйте перефразировать запрос, пожалуйста', ''
-
-        getLogger().error(f'Время работы: {datetime.now() - start_time}')
-        return [closest_one_distance[1][1], closest_one_distance[1][2]]
+        return closest_one_distance[1][1], closest_one_distance[1][2]

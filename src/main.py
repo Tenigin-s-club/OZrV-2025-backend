@@ -1,17 +1,22 @@
 from contextlib import asynccontextmanager
+
+import time
+from logging import getLogger
 from uuid import UUID, uuid4
 
-import requests
 from fastapi import FastAPI, Body, Request
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy import text
 
 from src.bert import BertModel
 from src.config import settings
+from src.database.database import async_session_maker
 from src.repositories.chat_repository import ChatRepository
 from src.repositories.message_repository import MessageRepository
 from src.routers import routers_list
 from src.schemas.chat_schema import SCreateChat, SAnswer
 from src.schemas.message_schema import MessageS, SMessageCreate
+from src.schemas.statistics_schema import SStatistics
 from src.utils.security.token import get_user_id
 from src.utils.translate.translate import translate_text
 
@@ -40,6 +45,23 @@ origins = [
     'http://localhost:5173'
 ]
 
+
+@app.middleware("http")
+async def get_statistics(request: Request, call_next):
+    if request.url != 'http://127.0.0.1:8080/api/question':
+        return await call_next(request)
+
+    start_time = time.perf_counter()
+    response = await call_next(request)
+    process_time = (time.perf_counter() - start_time) * 100
+    getLogger("uvicorn.error").info(f'Process time: {process_time} msecs')
+    async with async_session_maker() as session:
+        query = text(f'INSERT INTO statistics (request_time) VALUES ({process_time})')
+        await session.execute(query)
+        await session.commit()
+    return response
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -49,8 +71,20 @@ app.add_middleware(
 )
 
 
-async def _process_question(request: Request, question: str, lenguage: str, chat_id: UUID | None = None) -> SAnswer:
+@app.post('/question')
+def ask_question(question: str = Body(embed=True)) -> str:
+    return ''.join(bert_model.find_best(question))
 
+
+@app.get('/statistics')
+async def get_statistics() -> list[SStatistics]:
+    async with async_session_maker() as session:
+        # сделать все дни
+        query = text("SELECT to_char(requested_at, 'YYYY-MM-DD') as date, count(*) as requests_count, avg(request_time) as requests_avg_time from statistics GROUP BY requested_at")
+        result = await session.execute(query)
+        return result.mappings().all()
+
+async def _process_question(request: Request, question: str, lenguage: str, chat_id: UUID | None = None) -> SAnswer:
     try:
         user_id = await get_user_id(request)
     except Exception:
