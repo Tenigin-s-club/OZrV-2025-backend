@@ -40,6 +40,6 @@ class BertModel:
         closest_one_distance = best_distances[0]
         getLogger().error(f'{best_distances=}')
 
-        if closest_one_distance[1][0] > 0.15:
+        if closest_one_distance[1][0] > 0.25:
             return 'Не получилось найти ответ, попробуйте перефразировать запрос или написать его целиком в одно предложение, пожалуйста', ''
         return closest_one_distance[1][1], closest_one_distance[1][2]

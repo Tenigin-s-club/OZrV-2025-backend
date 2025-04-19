@@ -17,6 +17,7 @@ from src.routers import routers_list
 from src.schemas.chat_schema import SCreateChat, SAnswer
 from src.schemas.message_schema import MessageS, SMessageCreate
 from src.schemas.statistics_schema import SStatistics
+from src.utils.schedule.schedule import SimpleAsyncScheduler
 from src.utils.security.token import get_user_id
 from src.utils.translate.translate import translate_text
 

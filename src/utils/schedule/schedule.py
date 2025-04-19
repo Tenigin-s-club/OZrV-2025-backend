@@ -60,3 +60,5 @@ class SimpleAsyncScheduler:
 
     def stop(self) -> None:
         self._running = False
+
+
