@@ -27,7 +27,7 @@ class EventRepository:
     @staticmethod
     async def find_all() -> list[dict]:
         async with async_session_maker() as session:
-            query = select(Event.__table__.columns)
+            query = select(Event.__table__.columns).where(Event.date_event > datetime.now())
             data = await session.execute(query)
             return data.mappings().all()
 
