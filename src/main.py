@@ -1,5 +1,4 @@
 from contextlib import asynccontextmanager
-from typing import Optional
 from uuid import UUID, uuid4
 
 import requests
@@ -14,28 +13,7 @@ from src.routers import routers_list
 from src.schemas.chat_schema import SCreateChat, SAnswer
 from src.schemas.message_schema import MessageS, SMessageCreate
 from src.utils.security.token import get_user_id
-
-
-
-def yandex_translate(text, api_key: str, target_lang='en'):
-    url = "https://translate.api.cloud.yandex.net/translate/v2/translate"
-
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Api-key {api_key}"
-    }
-
-    body = {
-        "texts": [text],
-        "targetLanguageCode": target_lang
-    }
-
-    response = requests.post(url, headers=headers, json=body)
-
-    if response.status_code == 200:
-        return response.json()['translations'][0]['text']
-    else:
-        return f"Ошибка: {response.text}"
+from src.utils.translate.translate import translate_text
 
 
 @asynccontextmanager
@@ -71,15 +49,18 @@ app.add_middleware(
 )
 
 
-async def _process_question(request: Request, question: str, chat_id: UUID | None = None) -> SAnswer:
-    translated_text = yandex_translate("Егор я только что сделал переводчик большой член", "en")
-    print(translated_text)
+async def _process_question(request: Request, question: str, lenguage: str, chat_id: UUID | None = None) -> SAnswer:
+
     try:
         user_id = await get_user_id(request)
     except Exception:
+        if lenguage != 'ru':
+            message = await translate_text(''.join(bert_model.find_best(await translate_text(question))), lenguage)
+        else:
+            message = ''.join(bert_model.find_best(question))
         return SAnswer(
             chat_id=UUID('00000000-0000-0000-0000-000000000000'),
-            message=''.join(bert_model.find_best(question)),
+            message=message,
             chat_message_id = uuid4(),
             human_message_id = uuid4()
         )
@@ -88,19 +69,24 @@ async def _process_question(request: Request, question: str, chat_id: UUID | Non
         chat_id = await ChatRepository.create(**SCreateChat(name=question, user_id=user_id).model_dump())
 
     human_message_id = await MessageRepository.create(**SMessageCreate(is_human=True, content=question, chat_id=chat_id).model_dump())
-    message = ''.join(bert_model.find_best(question))
+
+    if lenguage != 'ru':
+        message = await translate_text(''.join(bert_model.find_best(await translate_text(question))), lenguage)
+    else:
+        message = ''.join(bert_model.find_best(question))
+
     chat_message_id = await MessageRepository.create(**SMessageCreate(is_human=False, content=message, chat_id=chat_id).model_dump())
 
     return SAnswer(chat_id=chat_id, message=message, human_message_id=human_message_id, chat_message_id=chat_message_id)
 
 
 @app.post('/question/{chat_id}')
-async def ask_question_chat(request: Request, chat_id: UUID, question: str = Body(embed=True)) -> SAnswer:
-    return await _process_question(request, question, chat_id)
+async def ask_question_chat(request: Request, chat_id: UUID, language: str, question: str = Body(embed=True)) -> SAnswer:
+    return await _process_question(request, question, language, chat_id)
 
 
 @app.post('/question')
-async def ask_question(request: Request, question: str = Body(embed=True)) -> SAnswer:
-    return await _process_question(request, question)
+async def ask_question(request: Request, language: str, question: str = Body(embed=True)) -> SAnswer:
+    return await _process_question(request, question, language)
 for router in routers_list:
     app.include_router(router)
