@@ -1,3 +1,4 @@
+from datetime import datetime
 from uuid import UUID
 
 from sqlalchemy import select, insert
@@ -26,6 +27,13 @@ class EventRepository:
     @staticmethod
     async def find_all() -> list[dict]:
         async with async_session_maker() as session:
-            query = select(Event.id, Event.title, Event.image_url)
+            query = select(Event.__table__.columns)
             data = await session.execute(query)
             return data.mappings().all()
+
+    @staticmethod
+    async def find_date_by_id(id: UUID) -> datetime:
+        async with async_session_maker() as session:
+            query = select(Event.date_event).where(Event.id == id)
+            data = await session.execute(query)
+            return data.scalar()
