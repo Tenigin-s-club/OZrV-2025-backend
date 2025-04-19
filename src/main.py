@@ -49,7 +49,10 @@ app.add_middleware(
 
 
 async def _process_question(request: Request, question: str, chat_id: UUID | None = None) -> SAnswer:
-    user_id = await get_user_id(request)
+    try:
+        user_id = await get_user_id(request)
+    except Exception:
+        return SAnswer(chat_id=UUID('00000000-0000-0000-0000-000000000000'), message=''.join(bert_model.find_best(question)))
 
     if not chat_id:
         chat_id = await ChatRepository.create(**SCreateChat(name=question, user_id=user_id).model_dump())
