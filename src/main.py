@@ -48,7 +48,7 @@ origins = [
 
 @app.middleware("http")
 async def get_statistics(request: Request, call_next):
-    if request.url != 'http://127.0.0.1:8080/api/question':
+    if request.url != 'http://127.0.0.1:8080/api/question' and request.url != 'http://127.0.0.1:8080/api/question/':
         return await call_next(request)
 
     start_time = time.perf_counter()
@@ -70,12 +70,6 @@ app.add_middleware(
     allow_headers=['*'],
 )
 
-
-@app.post('/question')
-def ask_question(question: str = Body(embed=True)) -> str:
-    return ''.join(bert_model.find_best(question))
-
-
 @app.get('/statistics')
 async def get_statistics() -> list[SStatistics]:
     async with async_session_maker() as session:
@@ -84,12 +78,12 @@ async def get_statistics() -> list[SStatistics]:
         result = await session.execute(query)
         return result.mappings().all()
 
-async def _process_question(request: Request, question: str, lenguage: str, chat_id: UUID | None = None) -> SAnswer:
+async def _process_question(request: Request, question: str, language: str, chat_id: UUID | None = None) -> SAnswer:
     try:
         user_id = await get_user_id(request)
     except Exception:
-        if lenguage != 'ru':
-            message = await translate_text(''.join(bert_model.find_best(await translate_text(question))), lenguage)
+        if language != 'ru':
+            message = await translate_text(''.join(bert_model.find_best(await translate_text(question))), language)
         else:
             message = ''.join(bert_model.find_best(question))
         return SAnswer(
@@ -104,15 +98,14 @@ async def _process_question(request: Request, question: str, lenguage: str, chat
 
     human_message_id = await MessageRepository.create(**SMessageCreate(is_human=True, content=question, chat_id=chat_id).model_dump())
 
-    if lenguage != 'ru':
-        message = await translate_text(''.join(bert_model.find_best(await translate_text(question))), lenguage)
+    if language != 'ru':
+        message = await translate_text(''.join(bert_model.find_best(await translate_text(question))), language)
     else:
         message = ''.join(bert_model.find_best(question))
 
     chat_message_id = await MessageRepository.create(**SMessageCreate(is_human=False, content=message, chat_id=chat_id).model_dump())
 
     return SAnswer(chat_id=chat_id, message=message, human_message_id=human_message_id, chat_message_id=chat_message_id)
-
 
 @app.post('/question/{chat_id}')
 async def ask_question_chat(request: Request, chat_id: UUID, language: str, question: str = Body(embed=True)) -> SAnswer:
