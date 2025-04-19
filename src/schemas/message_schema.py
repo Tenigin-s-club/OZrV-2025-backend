@@ -10,3 +10,8 @@ class MessageS(BaseModel):
     content: str
     is_human: bool
     created_at: datetime
+
+class SMessageCreate(BaseModel):
+    is_human: bool
+    content: str
+    chat_id: UUID

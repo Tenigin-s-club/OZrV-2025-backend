@@ -4,7 +4,7 @@ from sqlalchemy import select, insert
 
 from src.database.database import async_session_maker
 from src.database.models import Chat
-from src.schemas.chat_schema import ChatS
+from src.schemas.chat_schema import SChat
 
 
 class ChatRepository:
