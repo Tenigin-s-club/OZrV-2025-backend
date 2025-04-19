@@ -23,6 +23,13 @@ class AuthRepository:
             return result.mappings().one_or_none()
 
     @staticmethod
+    async def find_all(id: UUID) -> list[dict]:
+        async with async_session_maker() as session:
+            query = select(User.__table__.columns).where(User.id != id)
+            result = await session.execute(query)
+            return result.mappings().all()
+
+    @staticmethod
     async def create(**values) -> None:
         async with async_session_maker() as session:
             query = insert(User).values(**values)

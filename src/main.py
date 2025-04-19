@@ -53,7 +53,7 @@ async def get_statistics(request: Request, call_next):
 
     start_time = time.perf_counter()
     response = await call_next(request)
-    process_time = (time.perf_counter() - start_time) * 100
+    process_time = (time.perf_counter() - start_time) * 1000
     getLogger("uvicorn.error").info(f'Process time: {process_time} msecs')
     async with async_session_maker() as session:
         query = text(f'INSERT INTO statistics (request_time) VALUES ({process_time})')

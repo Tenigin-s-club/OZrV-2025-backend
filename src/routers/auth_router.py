@@ -33,6 +33,19 @@ async def me(request: Request) -> SUser:
     return SUser(**user)
 
 
+@router.get('/all')
+async def get_all_users(request: Request) -> list[SUser]:
+    refresh_token = request.cookies.get(settings.auth.cookie_refresh)
+    try:
+        pyload = await decode_jwt(refresh_token.encode())
+    except Exception as e:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, 'token timeout')
+
+    sub = pyload['sub']
+    users = await AuthRepository.find_all(uuid.UUID(sub))
+    return [SUser(**user) for user in users]
+
+
 @router.post('/register', status_code=status.HTTP_201_CREATED)
 async def register(data: SRegister) -> None:
     data.password = encode_password(data.password)
