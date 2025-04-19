@@ -16,11 +16,11 @@ router = APIRouter(
 @router.get("")
 async def get_chat(request: Request):
     user_id = await get_user_id(request)
-    chats = await ChatRepository.fide_chats_by_user_id(user_id)
+    chats = await ChatRepository.find_chats_by_user_id(user_id)
     return [SChat(**chat) for chat in chats]
 
 @router.get("/chat_id")
 async def get_messages(request: Request, chat_id: UUID):
     user_id = await get_user_id(request)
-    messages = await MessageRepository.fide_message_by_chat_id(chat_id, user_id)
+    messages = await MessageRepository.find_message_by_chat_id(chat_id, user_id)
     return [MessageS(**message) for message in messages]
