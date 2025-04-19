@@ -22,8 +22,9 @@ class MessageRepository:
             return data.mappings().all()
 
     @staticmethod
-    async def create(**values):
+    async def create(**values) -> UUID:
         async with async_session_maker() as session:
-            query = insert(Message).values(**values)
-            await session.execute(query)
+            query = insert(Message).values(**values).returning(Message.id)
+            id = await session.execute(query)
             await session.commit()
+            return id.scalar()

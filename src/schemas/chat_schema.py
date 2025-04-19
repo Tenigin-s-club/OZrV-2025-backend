@@ -11,6 +11,8 @@ class SChat(BaseModel):
 
 class SAnswer(BaseModel):
     chat_id: UUID
+    human_message_id: UUID
+    chat_message_id: UUID
     message: str
 
 class SCreateChat(BaseModel):
